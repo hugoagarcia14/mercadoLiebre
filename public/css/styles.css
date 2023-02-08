@@ -156,9 +156,7 @@ footer{
 .paga{
     font-weight: bold;
 }
-.img-envio:hover{
-    transform: rotate(270deg) ;
-}
+
 .img-envio{
     margin-top: -15px;
     padding: 5px;
@@ -188,11 +186,29 @@ footer{
 .articulo-macbook:hover .descripcion{
     display: block;
 }
+.articulo-cafetera:hover,.articulo-samsung:hover,.articulo-tv:hover,.articulo-macbook:hover{
+   box-shadow: 10px 10px 5px 0px gray;
+    
+}
+.articulo-cafetera:hover .img-envio{
+    transform: rotate(270deg) ;
+}
+.articulo-samsung:hover .img-envio{
+    transform: rotate(270deg) ;
+}
+.articulo-tv:hover .img-envio{
+    transform: rotate(270deg) ;
+}
+.articulo-macbook:hover .img-envio{
+    transform: rotate(270deg) ;
+}
+
 .articulo-cafetera, .articulo-samsung,.articulo-tv, .articulo-macbook{
     background-color: white;
     margin-bottom: 20px;
     border:solid 1px white;
     margin:10px; 
+    transform: perspective(45);
     transition: all 450ms;     
 }
 .articulo-cafetera > .relative-cafetera{
