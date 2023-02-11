@@ -48,18 +48,18 @@
      <main>
         <form action="" method="post" class="crear-formulario">
             <div class="control-for">
-                <input type="text" placeholder="Nombre y apellidos:" name="nombreApellidoUsuario" id="nombreApellidoUsuario" class="input-control">
+                <input type="text" placeholder="Nombre y apellidos:" name="nombreApellidoUsuario" id="nombreApellidoUsuario" class="input-control" required>
             </div>
             <div class="control-for">
-                <input type="email" placeholder="Nombre de usuari@:" name="nombreUsuario" class="input-control">
+                <input type="email" placeholder="Nombre de usuari@:" name="nombreUsuario" class="input-control" required>
             </div>
             
             <div class="control-for">
             <h4>Fecha de nacimiento</h4>
-                <input type="date" placeholder="yyyy/mm/dd" name="fechaUsuario" class="input-control">
+                <input type="date" placeholder="yyyy/mm/dd" name="fechaUsuario" class="input-control" required>
             </div>
             <div class="control-for"></div>
-                <input type="text" placeholder="Domicilio:" name="domicilioUsuario" id="domicilioUsuario" class="input-control">
+                <input type="text" placeholder="Domicilio:" name="domicilioUsuario" id="domicilioUsuario" class="input-control" required>
             </div>
             <div class="control-for">
                 <h4>Perfil Usuario</h4>
@@ -82,10 +82,10 @@
                 <input type="file" placeholder="Foto de perfil" name="fotoPerfilUsuario" id="fotoPerfilUsuario" class="input-control">
             </div>
             <div class="control-for">
-                <input type="password" placeholder="Contraseña:" minlength=8 name="contraseñaUsuario" id="contraseñaUsuario" class="input-control">
+                <input type="password" placeholder="Contraseña:" minlength=8 name="contraseñaUsuario" id="contraseñaUsuario" class="input-control" min= 8 required>
             </div>
             <div class="control-for">
-                <input type="password" placeholder="Confirmar Contraseña:" minlength= 8 name="ConfirmaContraseñaUsuario" id="ConfirmaContraseñaUsuario" class="input-control">
+                <input type="password" placeholder="Confirmar Contraseña:" minlength= 8 name="ConfirmaContraseñaUsuario" id="ConfirmaContraseñaUsuario" class="input-control" min= 8 required>
             </div>
             <div class="boton-guardar">
                 <button type="submit" class="botonEnviar">ENVIAR</button>
